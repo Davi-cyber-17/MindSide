@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Criar conta — MINDSIDE</title>
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body data-area="ia">
+  <nav class="navbar">
+    <a class="brand" href="index.html"><span class="brand-dot"></span> MINDSIDE</a>
+    <button class="theme-toggle" data-theme-toggle>🌙</button>
+  </nav>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div style="width:70px;height:56px;margin:0 auto;" data-slime></div>
+      <h2>Criar sua conta</h2>
+      <p class="sub">Comece a organizar tarefas, compromissos e objetivos.</p>
+      <p class="sub" style="margin-top:-12px;">Versão demonstrativa: a conta é fictícia e fica salva só neste navegador.</p>
+      <div class="form-error" id="form-error"></div>
+      <form id="register-form">
+        <div class="field">
+          <label for="name">Nome</label>
+          <input type="text" id="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input type="password" id="password" required minlength="6" autocomplete="new-password">
+        </div>
+        <div class="field">
+          <label for="password_confirm">Confirmar senha</label>
+          <input type="password" id="password_confirm" required minlength="6" autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn btn-primary">Criar conta</button>
+      </form>
+      <div class="switch-link">Já tem conta? <a href="login.html">Entrar</a></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/area-theme.js"></script>
+  <script src="js/slime.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

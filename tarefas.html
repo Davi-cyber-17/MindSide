@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Tarefas — MINDSIDE</title>
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body data-area="tarefas">
+  <div class="app-shell"><div id="app-shell" style="display:contents;"></div></div>
+
+  <div class="modal-overlay" id="task-modal-overlay">
+    <div class="modal">
+      <h3 id="task-modal-title">Nova tarefa</h3>
+      <form id="task-form">
+        <input type="hidden" id="task-id">
+        <div class="field"><label>Título</label><input type="text" id="task-title" required></div>
+        <div class="field"><label>Descrição</label><input type="text" id="task-description"></div>
+        <div class="form-row">
+          <div class="field"><label>Prioridade</label>
+            <select id="task-priority"><option value="baixa">Baixa</option><option value="media" selected>Média</option><option value="alta">Alta</option><option value="urgente">Urgente</option></select>
+          </div>
+          <div class="field"><label>Categoria</label>
+            <select id="task-category"><option value="estudo">Estudo</option><option value="trabalho">Trabalho</option><option value="saude">Saúde</option><option value="lazer">Lazer</option><option value="pessoal">Pessoal</option><option value="geral" selected>Geral</option></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Prazo</label><input type="date" id="task-deadline"></div>
+          <div class="field"><label>Duração (min)</label><input type="number" id="task-duration" value="30" min="5"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Data agendada</label><input type="date" id="task-scheduled-date"></div>
+          <div class="field"><label>Horário agendado</label><input type="time" id="task-scheduled-time"></div>
+        </div>
+        <div class="field"><label>Status</label>
+          <select id="task-status"><option value="pendente">Pendente</option><option value="em_andamento">Em andamento</option><option value="concluida">Concluída</option></select>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn" id="task-cancel-btn">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/area-theme.js"></script>
+  <script src="js/slime.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/shell.js"></script>
+  <script src="js/tarefas.js"></script>
+</body>
+</html>

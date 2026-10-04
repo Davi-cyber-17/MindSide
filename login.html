@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Entrar — MINDSIDE</title>
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body data-area="ia">
+  <nav class="navbar">
+    <a class="brand" href="index.html"><span class="brand-dot"></span> MINDSIDE</a>
+    <button class="theme-toggle" data-theme-toggle>🌙</button>
+  </nav>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div style="width:70px;height:56px;margin:0 auto;" data-slime></div>
+      <h2>Bem-vindo de volta</h2>
+      <p class="sub">Versão demonstrativa: digite qualquer e-mail e senha para entrar, ou <a href="dashboard.html">acesse direto</a>.</p>
+      <div class="form-error" id="form-error"></div>
+      <form id="login-form">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input type="password" id="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+      <div class="switch-link">Não tem conta? <a href="cadastro.html">Criar agora</a></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/area-theme.js"></script>
+  <script src="js/slime.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
