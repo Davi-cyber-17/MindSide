@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MINDSIDE — Secretário Digital Inteligente</title>
+<link rel="icon" type="image/svg+xml" href="assets/stickers/slime-default.svg">
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body data-area="ia">
+  <nav class="navbar">
+    <a class="brand" href="index.html"><span class="brand-dot"></span> MINDSIDE</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Mudar para tema claro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
+      <a class="btn btn-ghost" href="dashboard.html">Acessar Painel</a>
+      <a class="btn btn-primary" href="assistente.html">Abrir Assistente</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow-mono"><span class="bar"></span>SECRETÁRIO DIGITAL · SIC 2026</div>
+        <h1>Organize sua rotina com<br><span class="accent">inteligência sob controle</span></h1>
+        <p class="lead-text">
+          Descreva sua rotina em linguagem natural. O MINDSIDE organiza tudo, confere conflitos de horário
+          e só altera sua agenda com a sua aprovação.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="dashboard.html">Acessar Painel Agora</a>
+          <a class="btn btn-ghost" href="cadastro.html">Criar Conta</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" style="position:relative;">
+        <div class="terminal hud">
+          <div class="terminal-bar">
+            <span class="tdot" style="background:var(--red);"></span>
+            <span class="tdot" style="background:var(--yellow);"></span>
+            <span class="tdot" style="background:var(--green);"></span>
+            <span class="label">pipeline://assistente.mindside/validacao-python</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="prompt">você &gt;</span> <span class="you">"Tenho prova de cálculo sexta às 18h, preciso estudar programação por 45 min e treinar na quarta às 16h."</span></div>
+            <div style="margin-top:10px;">
+              <span class="ai-line">✓ 3 intenções extraídas · verificando agenda e janelas livres no Python...</span>
+            </div>
+            <div class="terminal-preview-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+                <strong style="font-size:.83rem;">Prova de Cálculo</strong>
+                <span class="badge badge-alta">alta</span>
+              </div>
+              <div style="font-size:.73rem; color:var(--text-dim); font-family:var(--font-mono); margin-top:3px;">
+                Sexta · 18:00–19:00 · Categoria: estudo
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px; gap:8px; flex-wrap:wrap;">
+                <span class="tag">Validado sem conflitos</span>
+                <span style="font-family:var(--font-mono); font-size:.7rem; color:var(--text-secondary);">[✓ Aprovar] [✎ Editar] [↻ Novo horário]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slime-badge">
+          <div data-slime style="width:100%;height:100%;" title="MINDSIDE — Mascote Interativo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="features">
+      <div class="feature-card hud">
+        <img class="sticker-img" src="assets/stickers/slime-focus.svg" alt="Ícone Tarefas">
+        <h3>Tarefas & Prioridades</h3>
+        <p>Priorize demandas e conecte tarefas às suas metas.</p>
+      </div>
+      <div class="feature-card hud">
+        <img class="sticker-img" src="assets/stickers/slime-schedule.svg" alt="Ícone Agenda">
+        <h3>Compromissos & Agenda</h3>
+        <p>Veja sua semana e configure suas janelas livres.</p>
+      </div>
+      <div class="feature-card hud">
+        <img class="sticker-img" src="assets/stickers/slime-goal.svg" alt="Ícone Objetivos">
+        <h3>Objetivos</h3>
+        <p>Cada tarefa concluída atualiza o progresso da meta.</p>
+      </div>
+      <div class="feature-card hud">
+        <img class="sticker-img" src="assets/stickers/slime-idea.svg" alt="Ícone Assistente IA">
+        <h3>Assistente de IA</h3>
+        <p>Descreva várias atividades em uma frase só.</p>
+      </div>
+      <div class="feature-card hud">
+        <img class="sticker-img" src="assets/stickers/slime-conflict.svg" alt="Ícone Conflitos">
+        <h3>Guardião de Conflitos</h3>
+        <p>Detecta choques de horário e sugere novos encaixes.</p>
+      </div>
+      <div class="feature-card hud">
+        <img class="sticker-img" src="assets/stickers/slime-done.svg" alt="Ícone Controle Humano">
+        <h3>Decisão Humana</h3>
+        <p>Aprove, edite ou rejeite cada sugestão, com registro no Histórico.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-tagline"><strong>MindSide</strong> – Organize sua rotina. Simplifique seu dia</p>
+      <div class="footer-team">
+        <span class="footer-label">Integrantes</span>
+        <ul class="footer-members">
+          <li>Davi Graciano de Souza</li>
+          <li>Luiz Victor Almeida Miguel</li>
+          <li>José Martins Campos de Oliveira</li>
+          <li>Roberto Gusmão Suares Nascimento</li>
+        </ul>
+      </div>
+      <p class="footer-course">Samsung Innovation Campus 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/area-theme.js"></script>
+  <script src="js/slime.js"></script>
+</body>
+</html>

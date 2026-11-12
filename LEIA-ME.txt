@@ -1,0 +1,33 @@
+MINDSIDE — versão só frontend (Modo SIC carregado)
+==================================================
+
+Esta versão NÃO precisa de backend, banco de dados, Python nem PHP.
+É só HTML/CSS/JS: basta enviar o conteúdo desta pasta para o servidor
+(por exemplo, a pasta htdocs do InfinityFree) ou abrir o index.html.
+
+Como funciona
+- js/mock-backend.js simula a API do FastAPI dentro do navegador
+  (mesmas rotas, mesmos formatos de resposta e mesmas regras).
+- Os dados ficam no localStorage deste navegador; nada é enviado a servidor.
+- No primeiro acesso, o Cenário SIC 2026 já vem carregado:
+  4 tarefas, 3 compromissos, 2 objetivos, 3 janelas de disponibilidade
+  e 2 sugestões da IA (uma delas com conflito de horário, de propósito).
+- As datas do cenário são relativas a "hoje". Se o cenário não foi mexido
+  e o dia mudou, ele é recarregado sozinho com as datas atualizadas.
+  Se você alterou algo, seus dados são preservados.
+
+Botões úteis
+- "Carregar Cenário SIC" (Dashboard e Configurações): recarrega o cenário.
+- "Limpar dados" (Configurações): apaga tudo; o cenário não volta sozinho.
+- "Nova sessão" (barra lateral): volta ao Cenário SIC limpo.
+
+Diferenças em relação ao backend real
+- Assistente: usa o interpretador local por regras (o mesmo fallback do
+  backend, portado para JavaScript). Não chama Gemini/Anthropic.
+- Login/Cadastro: não existem contas de verdade. Os formulários só
+  definem nome/e-mail do perfil local; nenhuma senha é guardada.
+- Os dados não sincronizam entre navegadores ou dispositivos.
+
+Console do navegador (apoio na apresentação)
+- MindsideDemo.recarregarSIC()  -> recarrega o cenário
+- MindsideDemo.limparTudo()     -> apaga os dados locais
